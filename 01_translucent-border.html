@@ -1,0 +1,40 @@
+<!------------------------------------------------------------>
+<!--
+             background-clip属性
+             border-box	    背景被裁剪到边框盒
+             padding-box	背景被裁剪到内边距框
+             content-box	背景被裁剪到内容框。
+                                                            -->
+<!------------------------------------------------------------>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>半透明边框</title>
+    <style>
+        html,body{
+            font-size: 16px;
+        }
+        body {
+            background: url('http://csssecrets.io/images/stone-art.jpg');
+        }
+        div {
+            border: 10px solid hsla(0,0%,100%,.5);
+            background: white;
+            background-clip: padding-box;
+
+            /* styling */
+            max-width: 20em;
+            padding: 2em;
+            margin: 2em auto 0;
+            font: 100%/1.5 sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div>
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>
+</body>
+</html>
